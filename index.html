@@ -158,7 +158,7 @@ nav .in{max-width:440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr
 <script>
 const STAGES=["Исследование","Вайрфреймы","UI-дизайн","Прототип","Передача в разработку"];
 const KEY="maket-projects-v1";
-const d=(n)=>{const t=new Date();t.setHours(0,0,0,0);t.setDate(t.getDate()+n);return t.toISOString().slice(0,10)};
+const d=(n)=>{const t=new Date();t.setHours(0,0,0,0);t.setDate(t.getDate()+n);return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")};
 const SAMPLE=[
  {id:1,title:"Приложение доставки цветов",client:"Флора Экспресс",type:"iOS + Android",deadline:d(3),budget:180000,paid:90000,stages:[1,1,1,0,0],notes:"Пример. Показать 2 варианта главной в пятницу."},
  {id:2,title:"Редизайн онбординга",client:"Фитнес-клуб «Пульс»",type:"Mobile",deadline:d(12),budget:65000,paid:0,stages:[1,1,0,0,0],notes:"Пример. Ждём аналитику по отвалам на 2-м экране."},
